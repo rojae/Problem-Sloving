@@ -11,8 +11,8 @@ int arr[1000001];
 int main()
 {
 	cin >> N;
-    
-	// 수열 입력받기
+
+	// 수열 입력받기 
 	for (int i = 0; i < N; i++)
 		cin >> arr[i];
 	
