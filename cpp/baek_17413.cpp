@@ -10,15 +10,16 @@ using namespace std;
 
 
 int main(void){
-	stack<char> stack;
+	stack<char> stack;	// 뒤집힐 문자열이 들어가는 스택
     string str;
     string ans;
     bool isOpen = false;
-    getline(cin,str);
+    getline(cin,str);	// 문자 한 줄 입력
     
     for(int i=0; i<str.size(); i++){
     	char ch = str[i];
     	
+		// "<"
 		if(ch == '<'){
     		isOpen = true;    						
 			
@@ -29,6 +30,7 @@ int main(void){
 			
 			ans += "<";
     	}
+		// ">"
     	else if(ch == '>'){
     		isOpen = false;
 
@@ -39,6 +41,7 @@ int main(void){
 			
 			ans += ">";
 		}
+		// " "
 		else if(ch == ' '){
 			while(!stack.empty()){
     			ans += stack.top();
@@ -47,6 +50,9 @@ int main(void){
 			
 			ans += " ";
 		}
+		// 일반 문자의 경우
+		// "< >" 안에 있는 경우 뒤집지 않는다.
+		// 괄호 밖에 있는 경우 뒤집는다.
 		else{
 			if(!isOpen)
 				stack.push(str[i]);
