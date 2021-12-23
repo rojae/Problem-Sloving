@@ -31,7 +31,6 @@ int main(){
 
     while(n != 0){
         cin >> n;
-
         for(int i=2; i<n-1; i++){
             if((!arr[i]) && (!arr[n-i]) && (i % 2 != 0) && ((n-1) % 2 != 0)){
                 cout << n << " = " << i << " + " << n-i << '\n';
