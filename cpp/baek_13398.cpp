@@ -17,7 +17,6 @@ int main() {
     for (int i = 0; i < n; i++) {
         d[i][0] = d[i][1] = a[i];
         if (i == 0) 
-            continue;
         d[i][0] = max(d[i - 1][0] + a[i], a[i]);
         d[i][1] = max(d[i - 1][0], d[i - 1][1] + a[i]);
         ans = max(ans,max(d[i][0], d[i][1]));
