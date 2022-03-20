@@ -1,4 +1,13 @@
-// https://programmers.co.kr/learn/courses/30/lessons/12979
+/**
+* @fileName:baseStation_install.java
+* @author: rojae 
+* @date: 2022.03.22 10:29:30
+* @description: 프로그래머스 문제 풀이
+* 
+* https://programmers.co.kr/learn/courses/30/lessons/12979
+* Object Type이 아닌
+* Primitive type으로 바꿔야 효율성 테스트 통과
+*/
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -18,14 +27,13 @@ class Solution {
     public int solution(int n, int[] stations, int w) {
     	int answer = 0;
     	int position = 1;
-    	
-    	Queue<Integer> q = new LinkedList<Integer>();
-    	for(int s : stations)	q.offer(s);
-    	
+		int idx = 0;
+
     	while(position <= n) {
     		// 범위 안에 존재하는 경우
-    		if(!q.isEmpty() && q.peek() - w <= position) {
-    			position = q.poll() + w + 1;
+    		if(idx < stations.length && stations[idx] - w <= position) {
+				position = stations[idx] + w + 1;
+				idx += 1;
     		}
     		// 범위 밖에 존재하는 경우
     		else {
