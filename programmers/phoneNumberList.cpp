@@ -1,3 +1,9 @@
+/*
+* ==================================================
+* author : rojae
+* description https://programmers.co.kr/learn/courses/30/lessons/42577
+* ==================================================
+*/
 #include <iostream>
 #include <algorithm>
 #include <vector>

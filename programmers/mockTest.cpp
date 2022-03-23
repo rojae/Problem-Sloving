@@ -1,3 +1,9 @@
+/*
+* ==================================================
+* author : rojae
+* description : https://programmers.co.kr/learn/courses/30/lessons/42840
+* ==================================================
+*/
 #include <iostream>
 #include <string>
 #include <vector>
@@ -17,8 +23,8 @@ int main(){
     vector<int> answers = {1,2,3,4,5};
     vector<int> ans = solution(answers);
 
-    for(int i=0; i<ans.size(); i++)
-        cout << ans[i] << ' ';
+    for(auto i : ans)
+        cout << i << ' ';
 
     return 0;
 }
