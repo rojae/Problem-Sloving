@@ -1,3 +1,10 @@
+/** ==================================================
+* @fileName: targetNumber.cpp
+* @author: rojae 
+* @date: 2022.03.25
+* @description: https://programmers.co.kr/learn/courses/30/lessons/43165
+==================================================**/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
