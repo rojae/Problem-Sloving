@@ -11,7 +11,7 @@ using namespace std;
 
 int solution(int n, vector<int> lost, vector<int> reserve) {
     int answer = 0;
-    vector<int> stu(n+2,0);
+    vector<int> stu(n+2,0);     // n번쨰 학생 뒤에 학생, 1번째 학생 앞의 학생
     
     for(int i:lost){
         stu[i]--;
