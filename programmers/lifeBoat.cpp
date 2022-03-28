@@ -1,3 +1,10 @@
+/** ==================================================
+* @fileName: lifeBoat.cpp
+* @author: rojae 
+* @date: 2022.03.29
+* @description: https://programmers.co.kr/learn/courses/30/lessons/42885
+==================================================**/
+
 #include <iostream>
 #include <string>
 #include <vector>
